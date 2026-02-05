@@ -28,7 +28,7 @@ app.use(
   })
 );
 app.use(express.static(path.join(__dirname, "public")));
-
+// 改用 json 格式回傳
 app.get("/healthcheck", (req, res) => {
   res.status(200).json({
     status: "success",
